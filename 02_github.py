@@ -5,5 +5,7 @@ import requests # to make HTTP requests
 import argparse # to parse command-line arguments
 
 if __name__ == "__main__":
-    print("Hello World!")
-
+    url_1 = "https://api.github.com/emaadmanzoor"
+    r = requests.get(url_1)
+    print(r.status_code)
+    print(r.json())
